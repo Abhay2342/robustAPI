@@ -59,11 +59,14 @@ async function getPgVersion() {
 getPgVersion();
 
 app.get("/", (req, res) => {
-  res.send(`You Robust API is Working on Port ${port}
-  Github Profile: https://github.com/Abhay2342
-  ProjectURL: https://github.com/Abhay2342/robustAPI
-  LiveURL: https://robustapi.onrender.com/
-  `);
+  res.send({
+    port: `You Robust API is Working on Port ${port}`,
+
+    GithubProfile: "https://github.com/Abhay2342",
+
+    ProjectURL: "https://github.com/Abhay2342/robustAPI",
+    LiveURL: "https://robustapi.onrender.com/",
+  });
 });
 
 app.post("/login", (req, res) => {

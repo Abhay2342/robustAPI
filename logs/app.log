@@ -87,3 +87,8 @@
 {"level":"info","message":"Received a GET request for /courses"}
 {"level":"info","message":"Received a PATCH request for /verify/test2342@gmail.com"}
 {"level":"info","message":"Received a GET request for /users"}
+{"level":"info","message":"Received a GET request for /"}
+{"level":"info","message":"Received a GET request for /"}
+{"level":"info","message":"Received a GET request for /"}
+{"level":"info","message":"Received a GET request for /"}
+{"level":"info","message":"Received a GET request for /"}
