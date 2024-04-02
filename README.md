@@ -67,3 +67,7 @@ Please submit your issues and pull requests while following the automated templa
 ## Contributors
 
 - [**Abhay Singh Suryawanshi**](https://github.com/Abhay2342/)
+
+## Postman API Documentation
+
+For comprehensive documentation on how to use robustAPI and its endpoints, please refer to the [Postman API Documentation](https://documenter.getpostman.com/view/21116080/2sA35HZ2W1). This documentation provides detailed examples and instructions on making requests to the API, including user authentication, course management, and enrollment functionalities.
