@@ -1,13 +1,18 @@
-import postgres from "postgres";
+// import postgres from "postgres";
+import pkg from "pg";
+const { Pool } = pkg
+
 let { PGHOST, PGDATABASE, PGUSER, PGPASSWORD } = process.env;
 
-const sql = postgres({
+const sql = new Pool({
     host: PGHOST,
     database: PGDATABASE,
     username: PGUSER,
     password: PGPASSWORD,
     port: 5432,
-    ssl: 'require',
+    ssl: {
+      require: true,
+    },
   });
 
 
