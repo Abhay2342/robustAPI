@@ -66,6 +66,7 @@ app.get("/", (req, res) => {
 
     ProjectURL: "https://github.com/Abhay2342/robustAPI",
     LiveURL: "https://robustapi.onrender.com/",
+    PostmanAPI: "https://documenter.getpostman.com/view/21116080/2sA35HZ2W1",
   });
 });
 
