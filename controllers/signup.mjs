@@ -46,7 +46,7 @@ const signup = async (req, res) => {
 const sendVerificationEmail = async (email) => {
   try {
     // Create verification link
-    const verificationLink = `${LIVE_URI}${encodeURIComponent(email)}`;
+    const verificationLink = `${LIVE_URI}verify/${encodeURIComponent(email)}`;
 
     // Send a POST request to resend.com API
     const response = await resend.emails.send({
