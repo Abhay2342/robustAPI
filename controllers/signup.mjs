@@ -2,7 +2,7 @@ import sql from "../db/conn.mjs";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { Resend } from "resend";
-let { RESEND_URI } = process.env;
+let { RESEND_URI, LIVE_URI } = process.env;
 
 const resend = new Resend(RESEND_URI);
 
@@ -46,9 +46,7 @@ const signup = async (req, res) => {
 const sendVerificationEmail = async (email) => {
   try {
     // Create verification link
-    const verificationLink = `http://localhost:3000/verify/${encodeURIComponent(
-      email
-    )}`;
+    const verificationLink = `${LIVE_URI}${encodeURIComponent(email)}`;
 
     // Send a POST request to resend.com API
     const response = await resend.emails.send({

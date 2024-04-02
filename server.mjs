@@ -70,7 +70,7 @@ app.put("/signup", (req, res) => {
   signup.signup(req, res);
 });
 
-app.put("/verify/:email", (req, res) => {
+app.patch("/verify/:email", (req, res) => {
   signup.emailVerify(req, res);
 });
 
@@ -111,5 +111,9 @@ app.delete("/courses/delete/:id", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`app is on port ${port}`);
+  console.log(`You Robust API is Working on Port ${port}
+  Github Profile: https://github.com/Abhay2342
+  ProjectURL: https://github.com/Abhay2342/robustAPI
+  LiveURL: https://robustapi.onrender.com/
+  `);
 });

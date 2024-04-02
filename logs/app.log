@@ -81,3 +81,9 @@
 {"level":"info","message":"Received a PUT request for /courses/5"}
 {"level":"info","message":"Received a DELETE request for /courses/delete/6"}
 {"level":"info","message":"Received a DELETE request for /courses/delete/6"}
+{"level":"info","message":"Received a POST request for /login"}
+{"level":"info","message":"Received a GET request for /users"}
+{"level":"info","message":"Received a GET request for /users"}
+{"level":"info","message":"Received a GET request for /courses"}
+{"level":"info","message":"Received a PATCH request for /verify/test2342@gmail.com"}
+{"level":"info","message":"Received a GET request for /users"}
